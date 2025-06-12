@@ -332,7 +332,7 @@ export function ReservationForm({ locations, carClasses }: ReservationFormProps)
                       <TableRow className="text-lg font-medium">
                         <TableCell className="text-left">Total</TableCell>
                         <TableCell className="text-right">
-                          {`Rs.${calculateReservationTotalPrice(reservationData).rentTotalPrice}`}
+                          {`Rs.${calculateReservationTotalPrice(reservationData).rentTotalPrice + 2500}`}
                         </TableCell>
                       </TableRow>
                     )}
