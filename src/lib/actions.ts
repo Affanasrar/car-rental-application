@@ -35,7 +35,7 @@ export async function createReservation(data: ReservationData) {
       returnDate: new Date(data.returnDate),
       classId: carClass?.id,
       isYoungRenter: data.youngRenter,
-      totalPrice: data.youngRenter ? rentTotalPrice + 25 : rentTotalPrice
+      totalPrice: data.youngRenter ? rentTotalPrice + 2500 : rentTotalPrice
     };
 
     await prisma.reservation.create({ data: reservationData });
