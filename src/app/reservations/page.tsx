@@ -85,7 +85,7 @@ export default async function Page() {
                   </div>
                   <div className="flex items-center justify-between">
                     <h4 className="font-medium">Total Price</h4>
-                    <p>${reservation.totalPrice}</p>
+                    <p>Rs.{reservation.totalPrice}</p>
                   </div>
                 </section>
               </CardContent>
