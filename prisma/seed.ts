@@ -196,26 +196,26 @@ async function main() {
 
   await prisma.location.createMany({
     data: [
-      { name: 'Albuquerque, NM' },
-      { name: 'Atlanta, GA' },
-      { name: 'Boston, MA' },
-      { name: 'Chicago, IL' },
-      { name: 'Dallas, TX' },
-      { name: 'Denver, CO' },
-      { name: 'Houston, TX' },
-      { name: 'Jacksonville, FL' },
-      { name: 'Las Vegas, NV' },
-      { name: 'Los Angeles, CA' },
-      { name: 'Miami, FL' },
-      { name: 'New York City, NY' },
-      { name: 'Orlando, FL' },
-      { name: 'Philadelphia, PA' },
-      { name: 'Phoenix, AZ' },
-      { name: 'San Antonio, TX' },
-      { name: 'San Diego, CA' },
-      { name: 'San Francisco, CA' },
-      { name: 'Seattle, WA' },
-      { name: 'Washington, DC' }
+      { name: 'North Nazmabad, NN' },
+      { name: 'Garden, GA' },
+      { name: 'Surjani Town, ST' },
+      { name: 'Bahria Town, BT' },
+      { name: 'Korangi, KO' },
+      { name: 'Gulshan-e-Iqbal, GI' },
+      { name: 'Lyari, LY' },
+      { name: 'Baldia, BA' },
+      { name: 'Orangi Town, OT' },
+      { name: 'Liaquatabad, LI' },
+      { name: 'Gulberg, GU' },
+      { name: 'Shah Faisal, SF' },
+      { name: 'Landhi, LA' },
+      { name: 'Jamshed Town, JT' },
+      { name: 'SITE AREA, SA' },
+      { name: 'Kemari, KE' },
+      { name: ' Malir, MA' },
+      { name: 'Bin Qasim, BQ' },
+      { name: 'Gadap, GA' },
+      { name: 'New Karachi, NK' }
     ]
   });
 }
