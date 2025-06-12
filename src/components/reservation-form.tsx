@@ -311,20 +311,20 @@ export function ReservationForm({ locations, carClasses }: ReservationFormProps)
                     <TableRow>
                       <TableCell className="text-left">
                         {form.watch('carClass') !== '' &&
-                          `${carClasses?.find((carClass) => carClass.id === form.getValues().carClass)?.name} Class ($${carClasses?.find((carClass) => carClass.id === form.getValues().carClass)?.pricePerDay}/day)`}
+                          `${carClasses?.find((carClass) => carClass.id === form.getValues().carClass)?.name} Class (Rs.${carClasses?.find((carClass) => carClass.id === form.getValues().carClass)?.pricePerDay}/day)`}
                       </TableCell>
-                      <TableCell className="text-right">{`$${calculateReservationTotalPrice(reservationData).rentTotalPrice}`}</TableCell>
+                      <TableCell className="text-right">{`Rs.${calculateReservationTotalPrice(reservationData).rentTotalPrice}`}</TableCell>
                     </TableRow>
                     {form.watch('youngRenter') === true ? (
                       <>
                         <TableRow>
                           <TableCell className="text-left">Young Renter Fee (Under 25)</TableCell>
-                          <TableCell className="text-right">$25</TableCell>
+                          <TableCell className="text-right">Rs.2500</TableCell>
                         </TableRow>
                         <TableRow className="text-lg font-medium">
                           <TableCell className="text-left">Total</TableCell>
                           <TableCell className="text-right">
-                            {`$${calculateReservationTotalPrice(reservationData).rentTotalPrice + 25}`}
+                            {`Rs.${calculateReservationTotalPrice(reservationData).rentTotalPrice + 25}`}
                           </TableCell>
                         </TableRow>
                       </>
@@ -332,7 +332,7 @@ export function ReservationForm({ locations, carClasses }: ReservationFormProps)
                       <TableRow className="text-lg font-medium">
                         <TableCell className="text-left">Total</TableCell>
                         <TableCell className="text-right">
-                          {`$${calculateReservationTotalPrice(reservationData).rentTotalPrice}`}
+                          {`Rs.${calculateReservationTotalPrice(reservationData).rentTotalPrice}`}
                         </TableCell>
                       </TableRow>
                     )}
