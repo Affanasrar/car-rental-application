@@ -1,4 +1,5 @@
-# Car Rental Application 
+# Car Enhance API response handling and performance documentation update
+Rental Application 
 
 ![Next.js](https://img.shields.io/badge/Next.js-14-black?style=for-the-badge&logo=next.js)
 ![TypeScript](https://img.shields.io/badge/TypeScript-5-blue?style=for-the-badge&logo=typescript)
